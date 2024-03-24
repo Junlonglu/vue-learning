@@ -37,7 +37,7 @@
             //methods配置事件处理的回调函数
             methods:{
                 showInfo1(e){
-                    //默认给你传递event参数
+                    //默认给你传递event参数，event.target就是当前元素
                     //当是箭头函数的话this那就是window
                     console.log(this === vm); //this是vue实例
                     console.log('你好');
