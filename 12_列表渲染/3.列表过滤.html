@@ -19,6 +19,7 @@
 </div>
 <script type="text/javascript">
     //用监视属性书写功能
+    // #region //实现折叠功能
     // new Vue({
     //     el:'#root',
     //     data: {
@@ -45,8 +46,10 @@
     //     }
     // })
     //用计算属性书写功能
+    // #end
 
     //当computed和watch都可以实现基本功能时优先考虑computed (重要)
+    
     new Vue({
         el:'#root',
         data: {
@@ -62,7 +65,7 @@
             filPersons(){
                 return this.persons.filter(p => p.name.indexOf(this.keyword) !== -1);
             }
-        }
+        },
     })
 </script>
 </body>

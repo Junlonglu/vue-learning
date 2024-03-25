@@ -22,7 +22,8 @@
         <h1>欢迎 {{ name }} </h1>
         <button v-on:click="showInfo1">点我提示信息1</button>
         <!--简写形式 @click-->
-        <button @click="showInfo2($event,66)">点我提示信息2</button>
+        <!-- 当进行传参时，会丢失默认传递的event参数 -->
+        <button @click="showInfo2($event,66)">点我提示信息2</button>git
     </div>
     <script type="text/javascript">
         Vue.config.productionTip = false;

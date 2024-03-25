@@ -27,7 +27,8 @@
 
            //当读取person的age属性时get属性就会被调用，且返回值就是age的值
            //invoke property proxy映射数据代理
-           get: function () {
+           // 完整写法: get: function () {}
+           get() {
                //测试它的调用情况
                console.log('@@@ GET AGE');
                //此时age的值依赖number的值

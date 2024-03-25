@@ -44,7 +44,7 @@
         computed: {
             fullName: {
                 //get的作用，当读取fullName时get就会被调用，且返回值就做为fullName的值
-                //defineProperty
+                //底层是利用Object.defineProperty实现的
                 //注意vm._data是不存在计算属性的
                 //计算属性算完之后直接丢到了viewModel实例对象身上
                 /**
